@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Why — Dehusk</title>
+  <meta name="description" content="Why Dehusk exists: lactose intolerance across Asia, dairy import dependency in the Philippines, real nutrition, and a lower carbon footprint." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="topbar">
+    <p>The first locally-produced barista coconut milk in the Philippines <span aria-hidden="true">&rarr;</span></p>
+  </div>
+
+  <!-- Header -->
+  <header class="nav is-scrolled" id="siteNav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="/">dehusk</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/shop.html">Shop</a>
+        <a href="/#story">Our Story</a>
+        <a href="/#nutrients">Ingredients</a>
+        <a href="/careers.html">Careers</a>
+      </nav>
+      <div class="nav__icons">
+        <button class="nav__icon" type="button" aria-label="Search">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="nav__icon" type="button" aria-label="Account">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4.5 5-6 8-6s6.5 1.5 8 6"/></svg>
+        </button>
+        <button class="nav__icon" type="button" aria-label="Cart">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16l-1.5 11a2 2 0 0 1-2 1.7H7.5a2 2 0 0 1-2-1.7L4 7Z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Scroll-expand hero: the van banner fades out as the video zooms
+         from a small centered frame to fill the viewport. -->
+    <section class="why-expand" id="whyExpand">
+      <div class="why-expand__bg" id="whyExpandBg">
+        <img src="/visual/why/banner.jpg" alt="The Dehusk crew on their vintage van, parked in a coconut plantation" />
+        <div class="why-expand__bg-scrim"></div>
+      </div>
+
+      <div class="why-expand__stage">
+        <div class="why-expand__media" id="whyExpandMedia">
+          <video
+            id="whyExpandVideo"
+            class="why-expand__video"
+            src="/video/why-expand.mp4"
+            poster="/video/why-expand-poster.jpg"
+            muted
+            loop
+            playsinline
+            aria-label="Dehusk coconut milk, from a Philippine beach to a cup of coffee"
+          ></video>
+          <div class="why-expand__media-scrim" id="whyExpandScrim"></div>
+        </div>
+
+        <h1 class="why-expand__title" id="whyExpandTitle">
+          <span id="whyExpandWord1">Our</span>
+          <span id="whyExpandWord2">Why</span>
+        </h1>
+      </div>
+
+      <p class="why-expand__hint" id="whyExpandHint">Scroll to explore</p>
+    </section>
+
+    <div id="whyContent">
+    <!-- Mission -->
+    <section class="why-mission">
+      <div class="section-inner why-mission__inner">
+        <p data-reveal="up">We're a new milk company that is on a mission to bring delicious, high-quality, and affordable alt-milk to Asia. We believe that dairy milk needs an upgrade, and that's why we are committed to providing a plant-based alternative that is not only better for your stomach but also better for the planet. So go nuts for Dehusk, and make the switch to a healthier, more sustainable, and delicious alternative to dairy milk!</p>
+      </div>
+    </section>
+
+    <!-- Why rows -->
+    <section class="why-rows">
+      <div class="section-inner">
+        <h2 class="section-heading why-rows__heading" data-reveal="up">Here's why we do what we do</h2>
+      </div>
+
+      <div class="why-row">
+        <div class="section-inner why-row__inner">
+          <div class="why-row__media" data-reveal="left">
+            <img src="/visual/why/lactose.jpg" alt="Woman standing with a horse beside the Dehusk van" loading="lazy" />
+          </div>
+          <div class="why-row__copy" data-reveal="up" data-reveal-delay="1">
+            <h3>More than 80% of Asians are lactose intolerant.</h3>
+            <p>We specialize in plant-based drinks free from lactose, soy, nuts, or gluten allergens. Our commitment to creating better alternatives comes from our understanding that 80% of Asians are lactose intolerant. We want to ensure that everyone can enjoy a refreshing drink without worry.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-row why-row--reverse">
+        <div class="section-inner why-row__inner">
+          <div class="why-row__copy" data-reveal="up" data-reveal-delay="1">
+            <h3>South East Asia is extremely reliant on dairy imports.</h3>
+            <p>The Philippines alone imports 99% of their dairy supply. One day we'll be supporting the whole world, but right now we're focused on home – South East Asia. We use all things local, and we aim to support the local farmers and businesses.</p>
+          </div>
+          <div class="why-row__media" data-reveal="right">
+            <img src="/visual/why/imports.jpg" alt="Two local Filipino farmers standing among coconut palms" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="why-row">
+        <div class="section-inner why-row__inner">
+          <div class="why-row__media" data-reveal="left">
+            <img src="/visual/why/tasty.jpg" alt="A couple walking a horse beside the Dehusk van" loading="lazy" />
+          </div>
+          <div class="why-row__copy" data-reveal="up" data-reveal-delay="1">
+            <h3>Tasty doesn't have to be unhealthy.</h3>
+            <p>With micronutrient deficiency an issue among our communities, we wanna make a treat without compromise. Energy boost with every sip? Say less.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-row why-row--reverse">
+        <div class="section-inner why-row__inner">
+          <div class="why-row__copy" data-reveal="up" data-reveal-delay="1">
+            <h3>Dairy creates 2-5x more CO2 than plant-based milk.</h3>
+            <p>This statistic truly speaks for itself.</p>
+          </div>
+          <div class="why-row__media" data-reveal="right">
+            <img src="/visual/why/co2.jpg" alt="Close-up of the Dehusk van door, painted with botanical icons" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photographic CTA banner -->
+    <section class="cta-banner">
+      <img src="/visual/Product complete.png" alt="Two cartons of Dehusk coconut milk, The Barista and The Original, tilted against a mint background" loading="lazy" />
+      <div class="cta-banner__scrim"></div>
+      <div class="cta-banner__content" data-reveal="up">
+        <h2>Now you know our why.<br>Come taste it for yourself.</h2>
+        <a class="btn btn--secondary" href="/shop.html">Shop Now</a>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-inner footer__inner">
+      <div class="footer__brand">
+        <p class="footer__logo">dehusk</p>
+        <p class="footer__tag">Bold Like Dairy, but Foamier.</p>
+      </div>
+
+      <div class="footer__newsletter">
+        <h3>Stay Updated</h3>
+        <p>New flavors and restock news, straight to your inbox.</p>
+        <form class="footer__form" novalidate>
+          <label class="sr-only" for="footerEmail">Email address</label>
+          <input id="footerEmail" type="email" placeholder="Email address" required />
+          <button class="btn btn--primary" type="submit">Sign Up</button>
+        </form>
+      </div>
+
+      <div class="footer__nav">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="/#story">Our Story</a></li>
+          <li><a href="/#nutrients">Ingredients</a></li>
+          <li><a href="/why.html">Our Why</a></li>
+          <li><a href="/careers.html">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__nav">
+        <h3>Customer Care</h3>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping &amp; Returns</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__legal">&copy; 2026 Dehusk. Thoughtfully made in the Philippines.</p>
+  </footer>
+
+  <script type="module" src="/src/why.js"></script>
+</body>
+</html>

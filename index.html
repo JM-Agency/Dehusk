@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dehusk — Bold Like Dairy, but Foamier</title>
+  <meta name="description" content="Dehusk is the Philippines' first locally-produced, fortified barista coconut milk. Creamy, foamable, dairy-free." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__mark">dehusk</div>
+    <div class="loader__bar"><div class="loader__fill" id="loaderFill"></div></div>
+  </div>
+
+  <!-- Announcement bar -->
+  <div class="topbar">
+    <p>The first locally-produced barista coconut milk in the Philippines <span aria-hidden="true">&rarr;</span></p>
+  </div>
+
+  <!-- Header -->
+  <header class="nav" id="siteNav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#top">dehusk</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/shop.html">Shop</a>
+        <a href="#story">Our Why</a>
+        <a href="#nutrients">Ingredients</a>
+        <a href="/careers.html">Careers</a>
+      </nav>
+      <div class="nav__icons">
+        <button class="nav__icon" type="button" aria-label="Search">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="nav__icon" type="button" aria-label="Account">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4.5 5-6 8-6s6.5 1.5 8 6"/></svg>
+        </button>
+        <button class="nav__icon" type="button" aria-label="Cart">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16l-1.5 11a2 2 0 0 1-2 1.7H7.5a2 2 0 0 1-2-1.7L4 7Z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Scroll-scrubbed cinematic hero -->
+    <section class="hero-scrub" id="heroScrub">
+      <div class="hero-scrub__stage">
+        <canvas id="scrubCanvas"></canvas>
+        <div class="hero-scrub__scrim"></div>
+        <div class="hero-scrub__content" id="heroContent" data-align="left">
+          <div class="hero-scrub__panel is-visible" id="heroPanel">
+            <h1 class="hero-scrub__headline">Bold Like Dairy,<br>but Foamier.</h1>
+            <p class="hero-scrub__subtext">Fortified coconut milk, made for coffee — creamy, foamable, dairy-free.</p>
+            <a class="btn btn--primary" href="/shop.html">Shop Now</a>
+          </div>
+        </div>
+        <div class="hero-scrub__scrollcue" id="heroScrollcue" aria-hidden="true">
+          <span>Scroll</span>
+          <div class="hero-scrub__scrollcue-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fortification band -->
+    <section class="nutrients" id="nutrients">
+      <div class="section-inner">
+        <h2 class="section-heading section-heading--light">Fortified to match dairy, drop for drop.</h2>
+      </div>
+
+      <div class="nutrients__stage" id="nutrientsStage">
+        <img class="nutrients__bg" src="/visual/nutrients-elements.webp" alt="A Dehusk carton floating among illustrated coconut, flower, monstera leaf and palm leaf motifs" />
+
+        <span class="nutrients__hotspot" data-hotspot="riboflavin" style="top:20%;left:35%"></span>
+        <span class="nutrients__hotspot" data-hotspot="b12" style="top:20%;left:64%"></span>
+        <span class="nutrients__hotspot" data-hotspot="calcium" style="top:75%;left:39%"></span>
+        <span class="nutrients__hotspot" data-hotspot="iodine" style="top:76%;left:63%"></span>
+
+        <svg class="nutrients__trails" viewBox="0 0 1376 768" preserveAspectRatio="none" aria-hidden="true">
+          <path class="nutrients__trail" data-trail="riboflavin" d="M 300,76 C 345,68 420,88 430,113 C 445,133 460,144 478,153" />
+          <path class="nutrients__trail" data-trail="b12" d="M 1076,76 C 1031,68 956,88 946,113 C 931,133 916,144 898,153" />
+          <path class="nutrients__trail" data-trail="calcium" d="M 300,633 C 350,605 400,650 450,610 C 480,588 505,580 537,576" />
+          <path class="nutrients__trail" data-trail="iodine" d="M 1076,633 C 1026,605 976,650 926,610 C 900,590 880,586 867,584" />
+
+          <circle class="nutrients__droplet" data-trail="riboflavin" cx="478" cy="153" r="5" />
+          <circle class="nutrients__droplet" data-trail="b12" cx="898" cy="153" r="5" />
+          <circle class="nutrients__droplet" data-trail="calcium" cx="537" cy="576" r="5" />
+          <circle class="nutrients__droplet" data-trail="iodine" cx="867" cy="584" r="5" />
+        </svg>
+
+        <div class="nutrients__callouts">
+          <article class="nutrient-callout nutrient-callout--tl" data-hotspot-target="riboflavin">
+            <p class="nutrient-callout__name">Riboflavin</p>
+            <p class="nutrient-callout__body">Supports the body's natural energy release.</p>
+          </article>
+          <article class="nutrient-callout nutrient-callout--tr" data-hotspot-target="b12">
+            <p class="nutrient-callout__name">Vitamin B12</p>
+            <p class="nutrient-callout__body">Absent from plants by nature — added back in.</p>
+          </article>
+          <article class="nutrient-callout nutrient-callout--bl" data-hotspot-target="calcium">
+            <p class="nutrient-callout__name">Calcium</p>
+            <p class="nutrient-callout__body">Same bone-supporting calcium as dairy milk.</p>
+          </article>
+          <article class="nutrient-callout nutrient-callout--br" data-hotspot-target="iodine">
+            <p class="nutrient-callout__name">Iodine</p>
+            <p class="nutrient-callout__body">Supports normal thyroid function.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story split -->
+    <section class="story" id="story">
+      <div class="story__backdrop" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="section-inner story__inner">
+        <div class="story-card story__copy">
+          <div class="story__glow" aria-hidden="true"></div>
+          <div class="story__copy-inner">
+            <h2 class="section-heading">Grown on the tree of life.</h2>
+            <p>Coconuts have fed and built the Philippines for generations. Dehusk works directly with local farms to turn that same coconut into a milk that holds up in a latte — thick enough to foam, clean enough to drink black.</p>
+            <p>It's the first coconut milk drink produced locally in the Philippines, from husk to carton.</p>
+            <a class="btn btn--primary" href="/why.html">Our Why</a>
+          </div>
+        </div>
+        <div class="story-card story__media">
+          <div class="story__video-frame">
+            <video
+              id="storyVideo"
+              class="story__video"
+              src="/video/story-brique-2.mp4"
+              poster="/video/story-brique-2-poster.jpg"
+              muted
+              playsinline
+              aria-label="Dehusk Barista carton rotating in place"
+            ></video>
+            <div class="story__fade" aria-hidden="true"></div>
+            <div class="story__caption">
+              <h3>The Barista.<br>Made for coffee.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flavors carousel -->
+    <section class="flavors" id="flavors">
+      <div class="section-inner flavor-carousel__head">
+        <span class="badge badge--outline">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg>
+          Fan favorites
+        </span>
+        <h2 class="section-heading">One base. However you take it.</h2>
+      </div>
+
+      <div class="swiper flavor-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/visual/Dehusk mockup1.png" alt="Dehusk Original coconut milk poured into an iced ube latte" />
+            <p class="flavor-swiper__caption">Ube Coconut Milk</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="/visual/Dehusk mockup2.png" alt="Dehusk Original coconut milk poured into an iced strawberry drink" />
+            <p class="flavor-swiper__caption">Strawberry Coconut Milk</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="/visual/Dehusk mockup4.png" alt="Dehusk Original coconut milk beside an iced coco mango matcha" />
+            <p class="flavor-swiper__caption">Coco Mango Matcha</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="/visual/Dehusk mockup3.png" alt="Espresso poured over Dehusk Original coconut milk to make an iced coco latte" />
+            <p class="flavor-swiper__caption">Coco Latte</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="flavors__cta">
+        <a class="btn btn--primary" href="/shop.html">Shop All Milks</a>
+      </div>
+    </section>
+
+    <!-- Photographic CTA banner -->
+    <section class="cta-banner">
+      <img src="/visual/Dehusk Header Image.png" alt="Dehusk carton on a beach table at sunset, surrounded by fresh coconuts" loading="lazy" />
+      <div class="cta-banner__scrim"></div>
+      <div class="cta-banner__content">
+        <h2>Grown in the Philippines.<br>Made for your morning.</h2>
+        <a class="btn btn--secondary" href="/shop.html">Shop Now</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-inner footer__inner">
+      <div class="footer__brand">
+        <p class="footer__logo">dehusk</p>
+        <p class="footer__tag">Bold Like Dairy, but Foamier.</p>
+      </div>
+
+      <div class="footer__newsletter">
+        <h3>Stay Updated</h3>
+        <p>New flavors and restock news, straight to your inbox.</p>
+        <form class="footer__form" novalidate>
+          <label class="sr-only" for="footerEmail">Email address</label>
+          <input id="footerEmail" type="email" placeholder="Email address" required />
+          <button class="btn btn--primary" type="submit">Sign Up</button>
+        </form>
+      </div>
+
+      <div class="footer__nav">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#nutrients">Ingredients</a></li>
+          <li><a href="/why.html">Our Why</a></li>
+          <li><a href="/careers.html">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__nav">
+        <h3>Customer Care</h3>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping &amp; Returns</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__legal">&copy; 2026 Dehusk. Thoughtfully made in the Philippines.</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
