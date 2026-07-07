@@ -1,5 +1,9 @@
 /* Careers page: footer form, hero parallax, mouse-tilt job photos, scroll-reveal. */
 
+import { initMobileNav } from "./nav.js";
+
+initMobileNav();
+
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 /* ------------------------------ Footer form -------------------------------- */

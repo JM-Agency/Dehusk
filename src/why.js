@@ -1,5 +1,9 @@
 /* Static content page: scroll-expand hero + footer form + scroll-reveal. */
 
+import { initMobileNav } from "./nav.js";
+
+initMobileNav();
+
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 /* ------------------------------ Scroll-expand hero --------------------------

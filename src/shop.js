@@ -1,5 +1,9 @@
 /* Shop page: footer form, mouse-tilt product cards, cursor spotlight, add-to-cart micro-interaction. */
 
+import { initMobileNav } from "./nav.js";
+
+initMobileNav();
+
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 /* ------------------------------ Footer form -------------------------------- */

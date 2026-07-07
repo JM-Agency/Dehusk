@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import Swiper from "swiper";
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
+import { initMobileNav } from "./nav.js";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -312,6 +313,7 @@ const navEl = document.getElementById("siteNav");
 function onNavScroll() {
   navEl.classList.toggle("is-scrolled", window.scrollY > 40);
 }
+initMobileNav();
 
 /* --------------------------------- Boot ----------------------------------- */
 
