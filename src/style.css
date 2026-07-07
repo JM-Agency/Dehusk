@@ -686,9 +686,13 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 900px) {
   .story__inner { grid-template-columns: 1fr; gap: 1.6rem; }
-  .story-card { height: 46rem; }
+  .story-card { height: auto; }
   .story__copy { padding: 4rem 3.2rem; }
-  .story__media { order: -1; }
+  .story__media { order: -1; height: 46rem; }
+}
+
+@media (max-width: 480px) {
+  .story__copy { padding: 3.2rem 2.4rem; }
 }
 
 /* ==========================================================================
